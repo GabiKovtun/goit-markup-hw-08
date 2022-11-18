@@ -5,24 +5,28 @@
 @import './base/body';
 @import './utils/placeholders';
 
-@import './components/logo';
-@import './components/container';
+
+@import './layouts/header';
 @import './components/mobil-menu';
+@import './components/container';
+@import './components/logo';
+
 @import './components/section';
 @import './components/modal-backdrop';
 @import './components/modal-info';
-@import './components/portfolio';
+
 @import './components/title';
+@import './components/hero';
+@import './components/clients';
+@import './components/feature';
+@import './components/portfolio';
+@import './components/portfolio-cards';
+@import './components/portfolio-select';
+@import './components/work';
+@import './components/team';
 
 
-@import './layouts/header';
-@import './layouts/hero';
-@import './layouts/feature';
-@import './layouts/work';
-@import './layouts/team';
-@import './layouts/clients';
 @import './layouts/footer';
-@import './layouts/portfolio-cards';
-@import './layouts/portfolio-select';
+
 
 
