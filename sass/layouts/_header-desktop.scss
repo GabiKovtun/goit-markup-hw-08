@@ -4,16 +4,13 @@
 }
 
 .header__container {
-  position: relative;
-  max-width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .site-nav__logo {
   justify-content: flex-start;
-  // padding: 24px 0;
+  padding: 24px 0;
   margin-right: 93px;
 }
 
@@ -22,12 +19,9 @@
 }
 
 .header-info {
-  display: none;
+  display: flex;
   justify-content: space-between;
   width: 100%;
-  @include tablet {
-    display: flex;
-  }
 }
 
 .site-nav {
@@ -81,20 +75,9 @@
 }
 
 .contact {
-  @include tablet {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 21px 15px;
-  }
-  @include desktop {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    justify-content: flex-end;
-    padding:0 0;
-  }
+  display: flex;
+  gap: 50px;
+  justify-content: flex-end;
 }
 
 .contact__mail,
@@ -104,7 +87,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
-
+  padding: 32px 0;
   color: var(--text-color);
   @extend %display;
   justify-content: center;
@@ -122,11 +105,8 @@
     color: var(--accent-color);
     fill: var(--accent-color);
   }
-
-  @include desktop {
-    padding: 32px 0;
-  }
 }
+
 .contact__icon {
   fill: currentColor;
 }

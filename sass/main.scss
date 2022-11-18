@@ -1,11 +1,13 @@
 @import './utils/variables';
 @import './utils/visualy';
+@import './utils/mixins';
 @import './base/resets';
 @import './base/body';
 @import './utils/placeholders';
 
 @import './components/logo';
-@import './components/cotainer';
+@import './components/container';
+@import './components/mobil-menu';
 @import './components/section';
 @import './components/modal-backdrop';
 @import './components/modal-info';
