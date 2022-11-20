@@ -5,7 +5,6 @@
   align-items: center;
   width: 40px;
   height: 40px;
-  padding: 10px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -25,7 +24,7 @@
 .mobil-menu {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   background-color: white;
@@ -45,7 +44,6 @@
 
   width: 40px;
   height: 40px;
-  padding: 10px;
   background-color: transparent;
   border: none;
   cursor: pointer;

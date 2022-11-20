@@ -16,9 +16,10 @@
 }
 
 .work-list {
+    @include formula(3, 30px);
     display: flex;
     gap: 30px;
-}
+  }
 
 .work-image {
     position: relative;

@@ -3,6 +3,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
+  @include desktop {
+    text-align: start;
+  }
 }
 .footer__wrap {
   width: 100%;
@@ -11,9 +14,13 @@
   align-items: center;
   gap: 70px;
   justify-content: space-between;
+  @include tablet {
+    gap: 60px;
+  }
   @include desktop {
     flex-direction: row;
     align-items: baseline;
+    gap: 93px;
   }
 }
 
@@ -24,6 +31,12 @@
     justify-content: space-between;
     align-items: baseline;
   }
+  @include desktop {
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 .logo-accent {
   color: var(--accent-color);
@@ -31,6 +44,9 @@
 
 .footer-adress-wrap {
   margin-bottom: 60px;
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .adress {
@@ -114,7 +130,9 @@
 
 .footer__subscription {
   text-align: center;
-  @include desktop{ width: 570px;}
+  @include desktop {
+    text-align: start;
+  }
 }
 
 .subscription__form {
@@ -123,8 +141,12 @@
   gap: 12px;
   align-items: center;
   width: 100%;
+  @include tablet {
+    gap: 20px;
+  }
   @include desktop {
     flex-direction: row;
+    gap: 12px;
   }
 }
 
@@ -140,7 +162,7 @@
 
 .subscription__input {
   display: block;
-  min-width: 315px;
+  min-width: 280px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -164,7 +186,12 @@
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
   }
-  @include tablet {  min-width: 358px;}
+  @include mobile {
+    min-width: 450px;
+  }
+  @include desktop {
+    min-width: 358px;
+  }
 }
 
 .subsription__send {
